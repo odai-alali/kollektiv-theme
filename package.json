@@ -1,0 +1,23 @@
+{
+  "name": "kollektiv",
+  "version": "1.0.0",
+  "description": "Theme for kollektiv blog",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass sass/style.scss --source-map-root file://${PWD}/ --source-map-embed true style.css",
+    "watch": "node-sass sass/style.scss --source-map-root file://${PWD}/ --source-map-embed true style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odai-alali/kollektiv-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odai-alali/kollektiv-theme/issues"
+  },
+  "homepage": "https://github.com/odai-alali/kollektiv-theme#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

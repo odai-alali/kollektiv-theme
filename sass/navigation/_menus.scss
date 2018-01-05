@@ -1,15 +1,17 @@
+$color__navigation-bg: lighten($color__logo-black, 8);
 .main-navigation {
-	clear: both;
+	// clear: both;
 	display: block;
-	float: left;
+	// float: left;
 	width: 100%;
-
+	background-color: $color__navigation-bg;
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
 
+		background-color: $color__navigation-bg;
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -50,8 +52,9 @@
 	}
 
 	li {
-		float: left;
+		display: inline-block;
 		position: relative;
+		padding: $size__spacing-unit-small;
 
 		&:hover > a,
 		&.focus > a {
