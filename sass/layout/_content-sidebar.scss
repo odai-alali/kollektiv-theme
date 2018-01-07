@@ -6,18 +6,32 @@
 }
 
 .content-area {
-	width: calc(100% - #{$size__site-sidebar});
 	padding: $size__spacing-unit-large 0;
 }
 
-.site-main {
-}
 
 .widget-area {
 	padding: $size__spacing-unit-large $size__spacing-unit-small;
-	flex: 1;
 }
 
 .site-footer {
 	width: $size__site-main;
+}
+
+@include mq($until: desktop) {
+	.site-content {
+		flex-direction: column;
+	}
+}
+@include mq($from: desktop) {
+	.site-content {
+		flex-direction: row;
+	}
+	.content-area {
+		width: calc(100% - #{$size__site-sidebar});
+	}
+
+	.widget-area {
+		flex: 1;
+	}
 }

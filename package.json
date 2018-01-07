@@ -19,5 +19,8 @@
   "homepage": "https://github.com/odai-alali/kollektiv-theme#readme",
   "devDependencies": {
     "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "sass-mq": "^3.3.2"
   }
 }

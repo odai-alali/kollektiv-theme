@@ -119,7 +119,7 @@ add_action( 'widgets_init', 'kollektiv_widgets_init' );
 function kollektiv_scripts() {
 	wp_enqueue_style( 'kollektiv-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'kollektiv-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	// wp_enqueue_script( 'kollektiv-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'kollektiv-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -155,4 +155,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

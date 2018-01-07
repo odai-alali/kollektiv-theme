@@ -48,15 +48,18 @@
 
 			</div><!-- .site-branding -->
 
-			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kollektiv' ); ?></button>
+			<div id="site-navigation" class="main-navigation">
+				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kollektiv' ); ?></button> -->
+				<input type="checkbox" id="menu-toggle" />
+      	<label for="menu-toggle" class="label-toggle"></label>
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'menu-1',
 						'menu_id'        => 'primary-menu',
+						'container' => 'nav'
 					) );
 				?>
-			</nav><!-- #site-navigation -->
+			</div><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
 

@@ -1,4 +1,8 @@
-.post {
+.site-main {
+	padding: $size__spacing-unit-large $size__spacing-unit-small;
+}
+
+.post, .page.type-page {
 	background-color: white;
 	padding: $size__spacing-unit-large $size__spacing-unit-small;
 }

@@ -12,11 +12,11 @@
 .site-header-wrapper {
   max-width: $size__max-width;
   margin: 0 auto;
-	padding: $size__spacing-unit-large 0 0;
 }
 .site-branding {
   display: flex;
   justify-content: space-between;
+  padding: $size__spacing-unit-large $size__spacing-unit-small;
   .custom-logo-link {
     width: 150px;
   }
