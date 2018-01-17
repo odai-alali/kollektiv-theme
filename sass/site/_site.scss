@@ -24,7 +24,11 @@
     font-size: 5em;
   }
 }
-.site-branding-title-block {}
+.site-branding-title-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .site-footer {
   padding: $size__spacing-unit-large $size__spacing-unit-small;
