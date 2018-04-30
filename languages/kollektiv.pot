@@ -184,3 +184,6 @@ msgstr ""
 msgctxt "list item separator"
 msgid ", "
 msgstr ""
+
+msgid "für gesellschaftliche Basis Organisierung mit Revolutionäre Perspektive"
+msgstr ""
