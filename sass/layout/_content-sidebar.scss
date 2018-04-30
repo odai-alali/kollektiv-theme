@@ -29,6 +29,9 @@
 	}
 	.content-area {
 		width: calc(100% - #{$size__site-sidebar});
+		&.full-width {
+			width: 100%;	
+		}
 	}
 
 	.widget-area {
