@@ -55,12 +55,11 @@ if ( ! function_exists( 'kollektiv_entry_footer' ) ) :
 				/* translators: 1: list of categories. */
 				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'kollektiv' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
-
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'kollektiv' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'kollektiv' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="tags-links"><i class="icon-price-tags"></i> ' . esc_html__( '%1$s', 'kollektiv' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 

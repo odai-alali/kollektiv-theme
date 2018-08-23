@@ -29,3 +29,25 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.entry-meta {
+	font-size: .8rem;
+	margin-top: .5rem;
+}
+
+.entry-footer {
+	.tags-links {
+		font-size: .8rem;
+	}
+	.cat-links {
+		display: none;
+	}
+	.comments-link{
+		display: block;
+		font-size: .8rem;
+	}
+	.edit-link {
+		display: block;
+		font-size: .8rem;
+	}
+}
