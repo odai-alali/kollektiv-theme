@@ -40,7 +40,7 @@
 					$description = get_bloginfo( 'description', 'display' );
 					if ( $description || is_customize_preview() ) : ?>
 						<p class="site-description">
-							<?php echo __( 'für gesellschaftliche Basis Organisierung mit Revolutionäre Perspektive', 'kollektiv' ); ?>
+							<?php echo __( 'für gesellschaftliche Basisorganisierung mit revolutionärer Perspektive', 'kollektiv' ); ?>
 						</p>
 					<?php
 					endif; ?>
