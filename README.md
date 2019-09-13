@@ -1,4 +1,4 @@
-# Kollwktive
+# Kollektive
 
 A privacy oriented wordpress theme based on [_s](https://underscores.me)
 
@@ -7,6 +7,9 @@ Privacy browsers usually disables JS. Therfore, This theme is developed to work 
 - The multilevel menu is implemented with pure CSS to work even when JS is disabled.
 - No Trackers where added to this theme.
 - Fonts are installed locally rather using Google Fonts for example
+
+## Installation
+You can install this theme by downloading the repo as a zip and extract in the `wp-content/themes` folder but it's highly recommended to use https://github.com/afragen/github-updater to keep your theme easily up to date.
 
 ## Development
 Docker setup where provided for the ease of testing and developing of the theme. To run a wordpress instance:
