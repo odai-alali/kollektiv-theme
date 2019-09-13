@@ -33,14 +33,14 @@
 				<div class="site-branding-title-block">
 					<h1 class="site-title">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<?php bloginfo( 'name' ); ?>
+							<?php echo __(get_bloginfo( 'name', 'display' )); ?>
 						</a>
 					</h1>
 					<?php
 					$description = get_bloginfo( 'description', 'display' );
 					if ( $description || is_customize_preview() ) : ?>
 						<p class="site-description">
-							<?php echo __( 'für gesellschaftliche Basisorganisierung mit revolutionärer Perspektive', 'kollektiv' ); ?>
+							<?php echo __( $description, 'kollektiv' ); ?>
 						</p>
 					<?php
 					endif; ?>
