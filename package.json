@@ -1,12 +1,13 @@
 {
   "name": "kollektiv",
-  "version": "1.0.0",
+  "version": "1.3.4",
   "description": "Theme for kollektiv blog",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass sass/style.scss --source-map-root file://${PWD}/ --source-map-embed true style.css",
+    "build": "node-sass sass/style.scss  style.css --output-style compressed",
     "watch": "node-sass sass/style.scss --source-map-root file://${PWD}/ --source-map-embed true style.css --watch",
-    "pot": "node dev-scripts/generate-pot.js"
+    "pot": "node dev-scripts/generate-pot.js",
+    "release": "npm run build && standard-version"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,17 @@
   "homepage": "https://github.com/odai-alali/kollektiv-theme#readme",
   "devDependencies": {
     "node-sass": "^4.7.2",
+    "standard-version": "^7.0.0",
     "wp-pot": "^1.7.2"
   },
   "dependencies": {
     "sass-mq": "^3.3.2"
+  },
+  "standard-version": {
+    "scripts": {
+      "postbump": "node dev-scripts/postbump.js",
+      "postcommit": "node dev-scripts/postcommit.js"
+    }
   }
+
 }
