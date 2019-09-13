@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node-sass sass/style.scss --source-map-root file://${PWD}/ --source-map-embed true style.css",
-    "watch": "node-sass sass/style.scss --source-map-root file://${PWD}/ --source-map-embed true style.css --watch"
+    "watch": "node-sass sass/style.scss --source-map-root file://${PWD}/ --source-map-embed true style.css --watch",
+    "pot": "node dev-scripts/generate-pot.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,8 @@
   },
   "homepage": "https://github.com/odai-alali/kollektiv-theme#readme",
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.7.2",
+    "wp-pot": "^1.7.2"
   },
   "dependencies": {
     "sass-mq": "^3.3.2"
