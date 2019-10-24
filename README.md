@@ -1,4 +1,4 @@
-# Kollektive
+# Kollektiv
 
 A privacy oriented wordpress theme based on [_s](https://underscores.me)
 
